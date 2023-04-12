@@ -1,0 +1,466 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body {
+  width: 100vw;
+  overflow-x: hidden;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  border-radius: 10px;
+  background-color: #c3d946;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #8ea319;
+}
+
+/* Header */
+
+header {
+  position: fixed;
+  width: 100%;
+  height: 60px;
+  padding: 0 100px;
+  background-color: #c3d946;
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+}
+.logo {
+  display: flex;
+  align-items: flex-start;
+}
+.logo h1 {
+  font-size: 30px;
+  color: #333;
+  margin-left: 15px;
+}
+
+.logoDesign {
+  display: block;
+  width: 40px;
+  height: 40px;
+  background-color: #333;
+  position: relative;
+  border-radius: 4px 40%;
+}
+
+#menu {
+  display: flex;
+}
+#menu a {
+  margin: 0 25px;
+}
+#menu li {
+  color: #333;
+}
+#menu li:hover {
+  background-color: grey;
+}
+#menuOpen,
+#menuClose {
+  display: none;
+}
+footer {
+  height: 60px;
+  background-color: #264ba8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #333;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 500;
+}
+footer h4 {
+  font-weight: 400;
+  font-size: 15px;
+}
+footer a {
+  color: red;
+}
+
+/* Main section */
+
+main {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.crtComponent {
+  height: 70vh;
+  width: 70vw;
+  display: flex;
+  align-items: space-between;
+  justify-content: space-between;
+}
+
+.compNav {
+  background-color: #c3d946;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 20%;
+  /* padding: 10px; */
+  border-radius: 20px;
+}
+.compNav h1 {
+  border-bottom: 1px solid #333;
+  width: 100%;
+  text-align: center;
+  margin-top: 10px;
+  font-size: 25px;
+}
+.compNav ul {
+  width: 100%;
+  margin-top: 20px;
+}
+.compNav ul li {
+  height: 50px;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  border-bottom: 1px solid #8ea3195e;
+}
+.compNav ul li:hover {
+  background-color: #8ea319;
+}
+.compNav ul a {
+  color: #333;
+}
+.compMainNav {
+  /* padding: 20px; */
+  overflow: hidden;
+  border-radius: 20px;
+  width: 76%;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.26);
+}
+.compMainNav h2 {
+  width: 100%;
+  text-align: center;
+  background-color: #c3d946;
+  padding: 5px 0;
+}
+.userIcon i {
+  font-size: 130px;
+  background-color: #c3d946;
+  border-radius: 50%;
+  padding: 10px;
+  margin-top: 10px;
+  color: #333;
+}
+.userIcon {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.userForm {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+}
+.userForm form {
+  width: 80%;
+}
+.userForm p {
+  width: 100%;
+}
+.userForm p input {
+  border: 0;
+  outline: none;
+  border-bottom: 1px solid #333;
+  padding: 10px;
+  width: 100%;
+  font-size: 15px;
+}
+.userForm input::placeholder {
+  color: #333;
+}
+.userForm form div {
+  width: 100%;
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.userForm form div input {
+  width: 90%;
+  outline: none;
+  border: 0;
+  margin-right: 10px;
+  padding: 10px;
+  background: #c3d946;
+  cursor: pointer;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+.userForm form div input:hover {
+  background: #8ea319;
+  color: #fff;
+}
+.userTable {
+  height: 600px;
+  overflow-y: auto;
+  margin: 10px;
+}
+table.userDetails {
+  width: 100%;
+  border: 1px solid #333;
+  border-collapse: collapse;
+}
+table.userDetails tr:first-child {
+  background-color: rgba(107, 107, 107, 0.356);
+}
+table.userDetails th,
+table.userDetails td {
+  border: 1px solid #333;
+  padding: 10px;
+}
+table.userDetails a {
+  background-color: #c3d946;
+  padding: 4px 20px;
+  color: #333;
+  font-weight: 500;
+}
+table.userDetails a:hover {
+  background-color: #8ea319;
+  color: #fff;
+}
+.center {
+  text-align: center;
+}
+.userTable h3 {
+  margin-top: 30px;
+}
+form.transferForm {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.transferForm select {
+  width: 50%;
+  padding: 5px 10px;
+  outline: none;
+  margin-top: 10px;
+  font-size: 15px;
+}
+.transferForm input {
+  width: 50%;
+  outline: none;
+  margin-top: 20px;
+  font-size: 15px;
+  padding: 5px 10px;
+}
+.transferForm input[type='submit'] {
+  background-color: #be2e2e;
+  color: #333;
+  border: none;
+  outline: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+}
+.contact {
+  padding: 10px;
+}
+.contact h1 {
+  font-size: 25px;
+}
+.contact hr {
+  width: 100%;
+  height: 1px;
+  border: 0;
+  background-color: #333;
+}
+.impLinks {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.impLinks a {
+  padding: 10px 20px;
+  background: #340674;
+  border-radius: 10px;
+  color: #333;
+  font-weight: bold;
+}
+.impLinks p:hover,
+.impLinks p:hover > a {
+  background: #644a9d;
+  /* color: #fff; */
+}
+.contactDetails {
+  width: 100%;
+  padding: 40px 20px;
+}
+.contactDetails h4 {
+  font-weight: 400;
+  margin-bottom: 10px;
+  font-size: 17px;
+  letter-spacing: 1px;
+}
+
+@media only screen and (max-width: 1400px) {
+  .crtComponent {
+    width: 90vw;
+  }
+}
+@media only screen and (max-width: 1201px) {
+  #menu {
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    right: -300px;
+    z-index: 600;
+    background-color: rgba(51, 51, 51, 0.938);
+    width: 300px;
+    height: 100vh;
+    justify-content: center;
+    transition: 0.35s ease-in-out;
+  }
+  #menu li {
+    color: #fff;
+    padding: 20px 0;
+    font-size: 17px;
+  }
+  #menuOpen,
+  #menuClose {
+    display: inherit;
+    z-index: 1000;
+    position: fixed;
+    top: 20px;
+    right: 30px;
+    color: #333;
+    font-size: 30px;
+    cursor: pointer;
+  }
+  #menuClose {
+    color: #fff;
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1201px) {
+  .crtComponent {
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .compNav h1 {
+    display: none;
+  }
+  .compNav {
+    flex-direction: row;
+    margin-bottom: 30px;
+    width: 100%;
+  }
+  .compNav ul {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 0;
+  }
+  .compNav ul li {
+    border-bottom: 0;
+  }
+  .compMainNav {
+    width: 100%;
+    box-shadow: none;
+    height: max-content;
+    border-radius: 10px 10px 0 0;
+    padding-bottom: 40px;
+  }
+  .userTable {
+    height: 100%;
+    padding-bottom: 20px;
+  }
+}
+
+@media only screen and (max-width: 901px) {
+  table.userDetails tr td:first-child,
+  table.userDetails tr th:first-child {
+    display: none;
+  }
+  table.userDetails th,
+  table.userDetails td {
+    font-size: 13px;
+  }
+  .crtComponent {
+    width: 99vw;
+  }
+  header {
+    padding: 0 20px;
+  }
+  .logo h1 {
+    font-size: 20px;
+  }
+}
+@media only screen and (max-width: 707px) {
+  .impLinks {
+    /* flex-direction: column; */
+    height: fit-content;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .impLinks p {
+    height: 50px;
+    font-size: 14px;
+  }
+  .contactDetails {
+    padding: 30px 10px;
+  }
+  .contactDetails h4 {
+    font-size: 12px;
+  }
+}
+@media only screen and (max-width: 707px) {
+  .compNav ul li {
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 636px) {
+  table.userDetails th,
+  table.userDetails td {
+    font-size: 12px;
+  }
+  .userTable {
+    margin: 10px 0;
+  }
+  table.userDetails {
+    width: 99vw;
+    overflow-x: auto;
+  }
+}

@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+a {
+  text-decoration: none;
+}
+.home {
+  background: url('../images/home_backdrop.jpg');
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* Header */
+
+header {
+  position: fixed;
+  width: 100%;
+  height: 60px;
+  padding: 0 100px;
+}
+nav {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.logo {
+  display: flex;
+  align-items: flex-start;
+}
+.logo h1 {
+  font-size: 30px;
+  color: #333;
+  margin-left: 15px;
+}
+
+.logoDesign {
+  display: block;
+  width: 40px;
+  height: 40px;
+  background-color: #333;
+  position: relative;
+  border-radius: 4px 40%;
+}
+#menu {
+  list-style-type: none;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+  position: fixed;
+  top: 0px;
+  right: -300px;
+  height: 100vh;
+  background-color: rgba(82, 82, 82, 0.938);
+  width: 300px;
+  transition: all 0.25s ease-in-out;
+}
+header nav ul li {
+  margin-left: 30px;
+  font-size: 20px;
+  font-weight: 400;
+  color: #165e4b;
+  margin-bottom: 40px;
+}
+header nav ul li:hover {
+  color: #b38428;
+  border-bottom: 1px solid #fff;
+}
+#menuOpen,
+#menuClose {
+  position: fixed;
+  top: 30px;
+  right: 40px;
+  z-index: 1000;
+  font-size: 40px;
+  color: #fff;
+  cursor: pointer;
+}
+#menuClose {
+  font-size: 50px;
+  top: 25px;
+  right: 35px;
+  display: none;
+}
+.home {
+  display: flex;
+  justify-content: center;
+  padding-left: 200px;
+  flex-direction: column;
+}
+.home h1 {
+  font-size: 90px;
+}
+.home h1 span {
+  color: #7a9500;
+  font-family: 'Times New Roman', Times, serif;
+}
+.home p {
+  width: 40%;
+  font-size: 18px;
+  margin-bottom: 25px;
+}
+
+.createUser {
+  padding: 8px 25px;
+  font-size: 18px;
+  background-color: #f9b52e;
+  color: #333;
+}
+.createUser:hover {
+  background-color: #c88b10;
+  color: #fff;
+}
+
+@media only screen and (max-width: 1116px) {
+  #menuOpen {
+    color: #333;
+  }
+  .logo {
+    padding-top: 40px;
+  }
+}
+@media only screen and (max-width: 1535px) {
+  .home h1 {
+    font-size: 50px;
+  }
+  .home p {
+    font-size: 15px;
+  }
+  .createUser {
+    font-size: 15px;
+  }
+  .home {
+    background-position: left top;
+  }
+}
+@media only screen and (max-width: 808px) {
+  header {
+    padding: 0 50px;
+  }
+  .home {
+    padding-left: 100px;
+  }
+  .home p {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 606px) {
+  .home {
+    padding-left: 50px;
+  }
+}
+
+@media only screen and (max-width: 520px) {
+  .home h1 {
+    font-size: 30px;
+  }
+  .home p {
+    font-size: 14px;
+  }
+  .createUser {
+    font-size: 14px;
+  }
+  .logo h1 {
+    font-size: 25px;
+  }
+  .logoDesign {
+    width: 30px;
+    height: 30px;
+  }
+  .header {
+    padding: 40px 10px;
+  }
+}
+
+@media only screen and (max-width: 333px) {
+  .home {
+    padding-left: 20px;
+  }
+}
