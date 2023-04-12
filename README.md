@@ -1,6 +1,6 @@
 # Basic Banking System
 
-![Banner](https://github.com/chaitanyashimpi/banksystem/blob/main/assets/images/2021-09-20_09-45.png)
+![Banner](https://github.com/snehagautam869/Banking-System-Website/blob/main/assets/images/home_backdrop.jpg)
 
 
  What will be covered in this Repo:
