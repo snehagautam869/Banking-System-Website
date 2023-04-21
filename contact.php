@@ -41,7 +41,7 @@
                       <a href="" target="_blank">Live Project</a>
                   </p>
                   <p>
-                      <a href="https://www.linkedin.com/in/snehaagautam/" target="_blank">Linkedln</a>
+                      <a href="https://www.linkedin.com/in/snehaagautam/" target="_blank">Linkedin</a>
                 </p>
               </div>
           </div>
