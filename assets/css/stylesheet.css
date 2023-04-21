@@ -72,11 +72,11 @@ header nav ul li {
   margin-left: 30px;
   font-size: 20px;
   font-weight: 400;
-  color: #165e4b;
+  color: #c88b10;
   margin-bottom: 40px;
 }
 header nav ul li:hover {
-  color: #b38428;
+  color: #ffffff;
   border-bottom: 1px solid #fff;
 }
 #menuOpen,
