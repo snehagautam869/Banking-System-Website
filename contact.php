@@ -35,17 +35,14 @@
               <hr>
               <div class="impLinks">
                   <p>
-                      <a href="https://github.com/chaitanyashimpi/banksystem" target="_blank">Github Code</a>
+                      <a href="https://github.com/snehagautam869/Banking-System-Website" target="_blank">Github Code</a>
                   </p>
                   <p>
-                      <a href="https://crtbank.cratonik.com" target="_blank">Live Project</a>
+                      <a href="" target="_blank">Live Project</a>
                   </p>
                   <p>
-                      <a href="https://chaitanyashimpi.netlify.app/" target="_blank">Coder's Portfolio</a>
-                  </p>
-                  <p>
-                      <a href="https://cratonik.com/" target="_blank">Business Site</a>
-                  </p>
+                      <a href="https://www.linkedin.com/in/snehaagautam/" target="_blank">Linkedln</a>
+                </p>
               </div>
           </div>
           </div>
